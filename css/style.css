@@ -1,0 +1,9 @@
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+@media print {
+    body {
+        font-size: 8.5px;
+    }
+}
