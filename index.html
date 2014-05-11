@@ -193,8 +193,12 @@
 
         <div class="hidden-print row">
             <div class="col-md-2">
-                <button type="button" class="btn btn-default" ng-click="generateLink()">Generate Link</button>
-                <a id="downloadLink" class="btn btn-default" download="invoice.json" ng-show="linkGenerated">Download</a>
+                <p>Save Invoice for reuse or share with a friend.</p>
+                <button type="button" class="btn btn-default" ng-click="generateLink()">Save invoice for later</button>
+            </div>
+            <div class="col-md-2" ng-show="linkGenerated">
+                <p>Upload the json file using <b>Load Invoice</b> to prefill this form again.</p>
+                <a id="downloadLink" class="btn btn-default" download="invoice.json">Download</a>
             </div>
             <div class="col-md-2">
                 <p>Load Invoice</p>
